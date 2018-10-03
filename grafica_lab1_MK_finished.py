@@ -1,4 +1,3 @@
-import math
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.axisartist import SubplotZero
@@ -47,8 +46,8 @@ file1 = open('file1.txt', 'w')
 file1.close()
 for i in range(len(res2['x'])):
     file1 = open('file1.txt', 'a')
-    reziki = "%s %s %s %s %s\n" % (str(res2['x'][i]), str(res2['y_my_func'][i]), str(res2['y_built_in'][i]), str(res2['absolute_error'][i]), str(res2['accuracy']))
-    file1.write(reziki)
+    results2 = "%s %s %s %s %s\n" % (str(res2['x'][i]), str(res2['y_my_func'][i]), str(res2['y_built_in'][i]), str(res2['absolute_error'][i]), str(res2['accuracy']))
+    file1.write(results2)
 file1.close()
 
 
@@ -59,8 +58,8 @@ file2 = open('file2.txt', 'w')
 file2.close()
 for i in range(len(res['x'])):
     file2 = open('file2.txt', 'a')
-    reziki2 = "%s %s\n" % (str(res['x'][i]), str(res['y'][i]))
-    file2.write(reziki2)
+    results = "%s %s\n" % (str(res['x'][i]), str(res['y'][i]))
+    file2.write(results)
 file2.close()
 
 
